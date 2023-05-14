@@ -1,0 +1,3 @@
+BD = id17788818_jogomemoria
+User = admin
+Senha = ul-Bra2021gp5 

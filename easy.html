@@ -1,0 +1,171 @@
+<?php include("PHP/conecta.php"); ?>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Jogo da memória Carros - Fácil</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+</head>
+<body>
+	<header class="header">
+		<nav class="container clearfix">
+		<a class="logo" href="index.html">Jogo Da Memória</a>
+		<ul class="pull-right">
+			<li>
+				<a classname="button popup" href="" onclick=abrirRegras()>Regras</a>
+			</li>
+		</ul>
+	</nav>
+	</header>
+	<div id ="container">
+		<div id="placar">
+			<h2>Tempo:</h2><p id="countdown">02:00</p>
+			<h2>Pontuação:</h2><p id="score">0</p>
+		</div>
+		<div id="btnDesistir">
+			<h2>Desistir</h2>
+		</div>
+		
+		<div class="card" id="card0">
+			<div class="face back">
+			</div>
+			<div class="face front">
+			</div>
+		</div>
+		
+		<div class="card" id="card1">
+			<div class="face back">			
+			</div>
+			<div class="face front">				
+			</div>
+		</div>
+
+		<div class="card" id="card2">
+			<div class="face back">			
+			</div>
+			<div class="face front">			
+			</div>
+		</div>
+
+		<div class="card" id="card3">
+			<div class="face back">			
+			</div>
+			<div class="face front">			
+			</div>
+		</div>
+
+		<div class="card" id="card4">
+			<div class="face back">			
+			</div>
+			<div class="face front">			
+			</div>
+		</div>
+
+		<div class="card" id="card5">
+			<div class="face back">			
+			</div>
+			<div class="face front">			
+			</div>
+		</div>
+
+		<div class="card" id="card6">
+			<div class="face back">			
+			</div>
+			<div class="face front">			
+			</div>
+		</div>
+
+		<div class="card" id="card7">
+			<div class="face back">			
+			</div>
+			<div class="face front">			
+			</div>
+		</div>
+
+		<div class="card" id="card8">
+			<div class="face back">			
+			</div>
+			<div class="face front">			
+			</div>
+		</div>
+
+		<div class="card" id="card9">
+			<div class="face back">			
+			</div>
+			<div class="face front">			
+			</div>
+		</div>
+
+		<div class="card" id="card10">
+			<div class="face back">			
+			</div>
+			<div class="face front">			
+			</div>
+		</div>
+
+		<div class="card" id="card11">
+			<div class="face back">			
+			</div>
+			<div class="face front">			
+			</div>
+		</div>
+
+
+		<div id="modalGameover">
+			<div id="modalContent1">
+				<!-- <p class="telaFinal">Fim de jogo!</p>
+				<p class="telaFinal">Sua Pontuação:</p>
+				<p class="telaFinal" id="finalScore">0000</p>
+				<p class="telaFinal">Digite seu nome:</p><br>
+				<input type="text" name="nome"> <br><br>
+				<button id="enviar" type="submit">Enviar</button> -->
+				<form method="get" action="salva.php" class="formulario">
+					<p class="telaFinal">Fim de jogo!</p>
+					
+					<p class="telaFinal">Sua Pontuação:</p>
+					
+					<p class="telaFinal" id="finalScore">0000</p>
+					<input type="hidden" name="pontos" value="finalScore">
+					<p class="telaFinal">Digite seu nome:</p><br>
+					<input type="text" name="nome" > <br><br>
+					<input type="submit" value="GRAVAR" class="botform">				
+				</form>				
+			</div>
+		</div>
+		<!-- <form method="get" action="salva.php" class="formulario">
+			<p class="telaFinal">Fim de jogo!</p>
+			
+			<p class="telaFinal">Sua Pontuação:</p>
+			
+			<p class="telaFinal" id="finalScore">0000</p>
+			<input type="hidden" name="pontos" value="finalScore">
+			<p class="telaFinal">Digite seu nome:</p><br>
+			<input type="text" name="nome" > <br><br>
+			<input type="submit" value="GRAVAR" class="botform">				
+		</form> -->
+		<div id="modalInicio">
+			<div id="modalContent2">
+				<p id="contagem">3</p>
+			</div>
+		</div>
+		<div id="btnBonus">
+			<h2>BONUS!</h2>
+		</div>
+	</div>
+	<footer class="footer">
+        <div class="container text-center">
+            
+            <nav>
+                <ul>
+                    <p>
+                        &copy;Copyright 2021 - Grupo 5 - Modelagem de Software.
+                    </p>
+                </ul>
+            </nav>
+        </div>
+   </footer>	
+	<script src="js/script.js"></script>
+</body>
+</html>

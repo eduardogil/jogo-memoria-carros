@@ -1,0 +1,90 @@
+/* Button */
+
+.button{
+    display: inline-block;
+    margin: 0;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    line-height: 16px;
+    color: #fff;
+    transition: background 0.2s ease-in-out 0s, transform 0.2s ease-in-out 0s;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.buttonsol {
+    display: inline-block;
+    margin: 0;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 12px;
+    line-height: 12px;
+    color: #fff;
+    transition: background 0.2s ease-in-out 0s, transform 0.2s ease-in-out 0s;
+    cursor: pointer;
+}
+
+.buttonsol:hover{
+    transform: scale(1.1);
+}
+.button:hover{
+    transform: scale(1.1);
+}
+
+.button-blue{
+    background: #0f7afd;
+}
+
+.button-green{
+    background: #34ae49;
+}
+
+.button-red{
+    background: #ff2600;
+}
+
+.button-gray{
+    background: #767a77;
+}
+
+.button-blue:hover{
+    background: #005bca;
+}
+
+.button-green:hover{
+    background: #2e7e3b;
+}
+
+.button-blue:hover{
+    background: #ca4000;
+}
+
+.button-blue:hover{
+    background: #4a4a4b;
+}
+
+.button-blue:active{
+    background: #0bb6eb
+}
+
+.button-green:active{
+    background: #0ce029
+}
+
+.button-blue:active{
+    background: #ff0000
+}
+
+.button-green:active{
+    background: #373838
+}
+
+@media (max-width:400px){
+    .button{
+        display:block;
+        width:100%;
+    }
+}
